@@ -30,6 +30,9 @@ int main(int argc, char** argv)
 	}
 
 	c = fgetc(entrada);
+
+	// só existe EOF depois de uma leitura frustada, quando na linha 32 pedir o primeiro byte e ele nao entregar (o arquivo tá fazio), ou seja, precisa de uma leitura antes
+	// EOF é um estado onde o ponteiro de leitura do arquivo está numa posição onde tem dados pra leitura do arquivo
 	while(c != EOF)
 	{
 		fputc(c, saida);
