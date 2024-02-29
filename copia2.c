@@ -1,10 +1,20 @@
+/*
+Esse programa faz leitura/escrita em blocos
+diferença do programa 1 (fwrite/fread) um bando de byte de cada vez, diferente do copia1 que é um byte de cada vez
+
+
+*/
 #include <stdio.h>
 
+// buffer de 8kb
 #define TAMANHO 8192
 
 int main(int argc, char** argv)
 {
+	// estrutura de dados com as infos que o SO precisa pra poder ir no arquivo e falar com ele, é um ponteiro opaco, nao interessa o que tem dentro dele, porque muda de SO pra SO
 	FILE *entrada, *saida;
+	
+	// em C caracter = byte
 	char buffer[TAMANHO];
 	int qtd;
 
