@@ -1,8 +1,6 @@
 /*
-Esse programa faz leitura/escrita em blocos
+Esse programa faz leitura/escrita em blocos, lê binários
 diferença do programa 1 (fwrite/fread) um bando de byte de cada vez, diferente do copia1 que é um byte de cada vez
-
-
 */
 #include <stdio.h>
 
