@@ -36,6 +36,34 @@ imprime na tela e tem que passar um arquivo stdout
 ## FGETS
 pega o arquivo texto (não binário)
 
+## SEEK
+
+```c
+  fseek(f, n, seek_...) 
+```
+#### SEEK_SET
+pega um elemento a partir do começo do arquivo
+relativo ao início
+
+#### SEEK_CUR
+pega um elemento a partir de onde ele está parado no arquivo
+relativo ao lugar que está parado
+
+#### SEEK_END
+pega um elemento a partir do final do arquivo
+relativo ao fim
+
+
+## FTELL
+retorna a posição absoluta onde vc estava
+
+```c
+  fseek(f,0,SEEK_END);
+  x - ftell(f);
+```
+
+o programa acima retorna o tamanho do arquivo. ele vai pro final do arquivo e "pergunta" onde está
+
 * Ler capítulo 11 do livro do deitel
 * link de linguagens bizarras (inclusive, whitespace) - 
 * https://programaosso.blogspot.com/2012/11/bizarras-linguagens-de-programacao.html
