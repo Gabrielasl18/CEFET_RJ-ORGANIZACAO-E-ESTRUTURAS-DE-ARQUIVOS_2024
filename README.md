@@ -62,7 +62,7 @@ retorna a posição absoluta onde vc estava
   x - ftell(f);
 ```
 
-o programa acima retorna o tamanho do arquivo. ele vai pro final do arquivo e "pergunta" onde está
+o programa acima retorna o tamanho do arquivo em bytes. ele vai pro final do arquivo e "pergunta" onde está
 
 * Ler capítulo 11 do livro do deitel
 * link de linguagens bizarras (inclusive, whitespace) - 
